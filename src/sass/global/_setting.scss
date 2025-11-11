@@ -1,4 +1,4 @@
-@use 'sass:math';
+@use "sass:math";
 
 // コンテンツのインナー幅（最も共通の幅が多い部分）
 $inner: 1100px;
@@ -8,8 +8,8 @@ $inner: 1100px;
 :root {
   // ※PC時：デザインカンプの余白の幅ではない。PC時は通常25pxで大丈夫！
 
-  --base-font-family: '';
-  --second-font-family: '';
+  --base-font-family: "zen old mincho", serif;
+  --second-font-family: "cormorant garamond", serif;
 
   // 余白
   --padding-pc: 25px;
