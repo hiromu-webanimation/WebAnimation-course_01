@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.header {
+  position: absolute;
+  top: rem(43);
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.header__nav-list {
+  display: flex;
+  gap: rem(40);
+  align-items: center;
+  justify-content: center;
+}
+
+.header__nav-item {
+  font-size: rem(18);
+}
+
+.header__nav-link {
+  font-size: rem(18);
+  font-weight: var(--regular);
+  letter-spacing: 0.12em;
+  color: #25201b;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}

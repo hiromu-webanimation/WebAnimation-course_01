@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Zen+Old+Mincho:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Zen+Old+Mincho&display=swap"
       rel="stylesheet"
     />
     <!-- css -->
@@ -32,99 +32,94 @@
   </head>
   <body>
     <main>
-      <section class="top-hero">
-        <div class="top-hero__background">
+      <section class="mv">
+        <h1 class="mv__logo">
+          <img src="./images/logo.png" alt="Lunarelle Esthetic" />
+        </h1>
+        <div class="mv__flower1">
           <img
-            src="./images/mv1.png"
-            alt="サロンのエントランス"
-            class="top-hero__background-image"
+            src="./images/flower1.png"
+            alt=""
+            class="mv__petal mv__petal--left"
             loading="lazy"
+            aria-hidden="true"
           />
         </div>
-        <img
-          src="./images/flower1.png"
-          alt=""
-          class="top-hero__petal top-hero__petal--left"
-          loading="lazy"
-          aria-hidden="true"
-        />
-        <img
-          src="./images/flower2.png"
-          alt=""
-          class="top-hero__petal top-hero__petal--right"
-          loading="lazy"
-          aria-hidden="true"
-        />
-        <img
-          src="./images/dec.png"
-          alt=""
-          class="top-hero__petal top-hero__petal--bottom"
-          loading="lazy"
-          aria-hidden="true"
-        />
-        <div class="top-hero__logo">
-          <p class="top-hero__logo-main">Lunarelle</p>
-          <p class="top-hero__logo-sub">ESTHETIC</p>
+        <div class="mv__dec">
+          <img src="./images/dec.png" alt="" aria-hidden="true" />
         </div>
-        <div class="top-hero__visual">
-          <img
-            src="./images/woman 1.png"
-            alt="柔らかく微笑む女性モデル"
-            class="top-hero__model"
-            loading="lazy"
-          />
+
+        <div class="mv__images">
+          <div class="mv__img01-wrap">
+            <div class="mv__img01">
+              <img
+                src="./images/mv1.png"
+                alt="サロンのエントランス"
+                loading="lazy"
+              />
+            </div>
+            <div class="mv__visual">
+              <img src="./images/woman_1.png" alt="柔らかく微笑む女性モデル" />
+            </div>
+          </div>
+          <div class="mv__img02-wrap">
+            <div class="mv__img02">
+              <img
+                src="./images/mv2.jpg"
+                alt="ローズの香りが漂うトリートメント"
+                loading="lazy"
+              />
+            </div>
+            <p class="mv__badge-label">About</p>
+          </div>
+          <div class="mv__img03-wrap">
+            <div class="mv__img03">
+              <img
+                src="./images/mv3.jpg"
+                alt="リラクゼーションメニューの施術"
+                loading="lazy"
+              />
+            </div>
+            <p class="mv__badge-label">Menu</p>
+          </div>
         </div>
-        <div class="top-hero__badge top-hero__badge--about">
-          <img
-            src="./images/mv2.jpg"
-            alt="ローズの香りが漂うトリートメント"
-            class="top-hero__badge-image"
-            loading="lazy"
-          />
-          <p class="top-hero__badge-label">About</p>
+        <h2 class="mv__slogan">
+          <span class="mv__slogan-text">ELEVATE</span>
+          <span class="mv__slogan-text">YOUR</span>
+          <span class="mv__slogan-text">BEAUTY</span>
+        </h2>
+        <p class="mv__vertical-copy">
+          <span class="mv__vertical-copy-text">私へのご褒美。</span
+          ><span class="mv__vertical-copy-text">極上の時間は</span>
+        </p>
+      </section>
+
+      <section class="top-intro">
+        <div class="top-intro__dec">
+          <img src="./images/flower2.png" alt="flower2" />
         </div>
-        <div class="top-hero__badge top-hero__badge--menu">
-          <img
-            src="./images/mv3.jpg"
-            alt="リラクゼーションメニューの施術"
-            class="top-hero__badge-image"
-            loading="lazy"
-          />
-          <p class="top-hero__badge-label">Menu</p>
-        </div>
-        <div class="top-hero__vertical-copy">
-          <span class="top-hero__vertical-copy-text">私へのご褒美。</span>
-          <span class="top-hero__vertical-copy-text">極上の時間は</span>
-        </div>
-        <div class="top-hero__slogan">
-          <p class="top-hero__slogan-text">ELEVATE</p>
-          <p class="top-hero__slogan-text">YOUR</p>
-          <p class="top-hero__slogan-text">BEAUTY</p>
-        </div>
-        <nav class="top-hero__nav" aria-label="サイト内メニュー">
-          <ul class="top-hero__nav-list">
-            <li class="top-hero__nav-item">
-              <a class="top-hero__nav-link" href="#">診療案内</a>
+        <nav class="header" aria-label="サイト内メニュー">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">診療案内</a>
             </li>
-            <li class="top-hero__nav-item">
-              <a class="top-hero__nav-link" href="#">クリニックについて</a>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">クリニックについて</a>
             </li>
-            <li class="top-hero__nav-item">
-              <a class="top-hero__nav-link" href="#">医師紹介</a>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">医師紹介</a>
             </li>
-            <li class="top-hero__nav-item">
-              <a class="top-hero__nav-link" href="#">施術メニュー</a>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">施術メニュー</a>
             </li>
-            <li class="top-hero__nav-item">
-              <a class="top-hero__nav-link" href="#">お客様の声</a>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">お客様の声</a>
             </li>
-            <li class="top-hero__nav-item">
-              <a class="top-hero__nav-link" href="#">オンライン予約</a>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">オンライン予約</a>
             </li>
           </ul>
         </nav>
-      </section>
-      <section class="top-intro">
         <div class="inner top-intro__inner">
           <h2 class="top-intro__title">あなたの美しさを、もっと自由に。</h2>
           <div class="top-intro__description">

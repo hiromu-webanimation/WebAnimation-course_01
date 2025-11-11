@@ -10,13 +10,8 @@ html {
   //375px~787px
   font-size: 16px;
 
-  @media (min-width:768px){
+  @media (min-width: 768px) {
     font-size: vw(strip-unit($inner), 16);
-  }
-
-  //inner~max-screen
-  @media (min-width: $inner) {
-    font-size: 16px;
   }
 }
 
@@ -28,14 +23,12 @@ a[href^="tel:"] {
   }
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
 
-
-
-img{
+img {
   height: 100%;
   object-fit: cover;
 }
