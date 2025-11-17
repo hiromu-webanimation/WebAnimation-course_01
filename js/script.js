@@ -1,51 +1,83 @@
-
-jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
-
-  var topBtn = $('.pagetop');
-  topBtn.hide();
-
-  // ボタンの表示設定
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 70) {
-      // 指定px以上のスクロールでボタンを表示
-      topBtn.fadeIn();
-    } else {
-      // 画面が指定pxより上ならボタンを非表示
-      topBtn.fadeOut();
+jQuery(function ($) {
+  gsap.set("main", {
+    opacity: 1,
+  });
+  const op = gsap.timeline();
+  op.fromTo(
+    ".mv__slogan-text",
+    {
+      maskPosition: "-900px 0%",
+    },
+    {
+      maskPosition: "0px 0%",
+      duration: 3,
+      stagger: 0.4,
+      ease: "power3.inOut",
     }
+  )
+    .fromTo(
+      ".mv__slogan-text",
+      {
+        backgroundPosition: "-240px 0%",
+      },
+      {
+        backgroundPosition: "240px 0%",
+        duration: 5,
+        stagger: 0.3,
+        ease: "power2.inOut",
+      },
+      "-=3.5"
+    )
+    .to(
+      ".mv__slogan-text",
+      {
+        color: "#FFD0D2",
+        duration: 2,
+        ease: "power2.inOut",
+      },
+      "-=2.5"
+    )
+    .fromTo(
+      ".mv__flower1",
+      {
+        x: -20,
+        opacity: 0,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1.2,
+        ease: "power2.inOut",
+      },
+      "-=1"
+    )
+    .to(
+      ".mv__bg",
+      {
+        maskPosition: "-100% 0%",
+        duration: 2,
+        ease: "power2.inOut",
+      },
+      "-=0.6"
+    );
+
+  const copy = new SplitText(".mv__vertical-copy-text", {
+    type: "chars",
   });
 
-  // ボタンをクリックしたらスクロールして上に戻る
-  topBtn.click(function () {
-    $('body,html').animate({
-      scrollTop: 0
-    }, 300, 'swing');
-    return false;
-  });
+  op.from(
+    copy.chars,
+    {
+      opacity: 0,
+      x: -4,
+      duration: 1.2,
+      ease: "power2.inOut",
+      stagger: {
+        each: 0.14,
+      },
+    },
+    "-=1"
+  );
 
-  // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
-  $(document).on('click', 'a[href*="#"]', function () {
-    let time = 400;
-    let header = $('header').innerHeight();
-    let target = $(this.hash);
-    if (!target.length) return;
-    let targetY = target.offset().top - header;
-    $('html,body').animate({ scrollTop: targetY }, time, 'swing');
-    return false;
-  });
-
-  //ドロワーメニュー
-  $("#MenuButton").click(function () {
-    // $(".l-drawer-menu").toggleClass("is-show");
-    // $(".p-drawer-menu").toggleClass("is-show");
-    $(".js-drawer-open").toggleClass("open");
-    $(".drawer-menu").toggleClass("open");
-    $("html").toggleClass("is-fixed");
-
-  });
-
-
-
-  
-
+  // この中であればWordpressでも「$」が使用可能になる
 });

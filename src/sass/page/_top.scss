@@ -1,5 +1,9 @@
 @use "global" as *;
 
+main {
+  overflow: hidden;
+  opacity: 0;
+}
 .mv {
   position: relative;
   z-index: 2;
@@ -7,6 +11,17 @@
   aspect-ratio: 1920 / 867;
 }
 
+.mv__bg {
+  position: fixed;
+  inset: 0;
+  z-index: 8;
+  background: linear-gradient(45deg, #fff 0%, #ddcdce 100%);
+  mask-image: linear-gradient(to right, transparent 0, #000 50% 100%);
+  mask-repeat: no-repeat;
+  mask-size: 200% 100%;
+  mask-position: 100% 0%;
+  pointer-events: none;
+}
 .mv__logo {
   aspect-ratio: 393/132;
   width: rem(393);
@@ -21,11 +36,11 @@
 .mv__flower1 {
   aspect-ratio: 553/788;
   position: absolute;
-  z-index: 3;
+  z-index: 11;
   width: 28%;
   left: 0;
   bottom: 0;
-  transform: translateY(45%);
+  translate: 0 45%;
 }
 
 .mv__dec {
@@ -116,7 +131,7 @@
 .mv__slogan {
   position: absolute;
   bottom: 0;
-  z-index: 5;
+  z-index: 15;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -128,8 +143,20 @@
   text-align: center;
   opacity: 0.7;
   line-height: 1.1;
-  color: rgba(255, 208, 210, 0.72);
+  width: fit-content;
+  margin-inline: auto;
+  // color: rgba(255, 208, 210, 0.72);
+  color: transparent;
+  background: linear-gradient(45deg, #f4727b 0 10%, #cfc9c9, #f4727b 90% 100%);
+  background-size: 100% 100%;
+  background-repeat: repeat-x;
   font-family: var(--second-font-family);
+  background-clip: text;
+
+  mask-image: linear-gradient(to right, #000 0 50%, transparent 100%);
+  mask-repeat: no-repeat;
+  mask-size: 200% 100%;
+  mask-position: 0% 0%;
 }
 
 .mv__vertical-copy {
