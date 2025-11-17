@@ -34,6 +34,7 @@ jQuery(function ($) {
         color: "#FFD0D2",
         duration: 2,
         ease: "power2.inOut",
+        stagger: 0.1,
       },
       "-=2.5"
     )
@@ -49,7 +50,7 @@ jQuery(function ($) {
         duration: 1.2,
         ease: "power2.inOut",
       },
-      "-=1"
+      "-=1.2"
     )
     .to(
       ".mv__bg",
