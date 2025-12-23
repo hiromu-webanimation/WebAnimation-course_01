@@ -1,9 +1,5 @@
 @use "global" as *;
 
-main {
-  overflow: hidden;
-  opacity: 0;
-}
 .mv {
   position: relative;
   z-index: 2;
@@ -11,13 +7,6 @@ main {
   aspect-ratio: 1920 / 867;
 }
 
-.mv__bg {
-  position: fixed;
-  inset: 0;
-  z-index: 8;
-  background: linear-gradient(45deg, #fff 0%, #ddcdce 100%);
-  pointer-events: none;
-}
 .mv__logo {
   aspect-ratio: 393/132;
   width: rem(393);

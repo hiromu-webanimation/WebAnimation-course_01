@@ -1,17 +1,10 @@
 @use "global" as *;
 
-// 最初のテキストが徐々に出てくる
-.mv__slogan-text{
-  mask-image: linear-gradient(to right, #000 0 50%, transparent 100%);
-  mask-repeat: no-repeat;
-  mask-size: 200% 100%;
-  mask-position: 0% 0%;
-}
-
-// mv全体が徐々に出てくる
-.mv__bg {
-  mask-image: linear-gradient(to right, transparent 0, #000 50% 100%);
-  mask-repeat: no-repeat;
-  mask-size: 200% 100%;
-  mask-position: 100% 0%;
-}
+// 最初の画面の背景
+// .mv__bg {
+//   position: fixed;
+//   inset: 0;
+//   z-index: 8;
+//   background: linear-gradient(45deg, #fff 0%, #ddcdce 100%);
+//   pointer-events: none;
+// }
