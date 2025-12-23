@@ -165,6 +165,32 @@ html {
   word-wrap: break-word;
 }
 
+.mv__slogan-text {
+  -webkit-mask-image: -webkit-gradient(linear, left top, right top, color-stop(0, #000), to(transparent));
+  -webkit-mask-image: linear-gradient(to right, #000 0 50%, transparent 100%);
+          mask-image: -webkit-gradient(linear, left top, right top, color-stop(0, #000), to(transparent));
+          mask-image: linear-gradient(to right, #000 0 50%, transparent 100%);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: 200% 100%;
+          mask-size: 200% 100%;
+  -webkit-mask-position: 0% 0%;
+          mask-position: 0% 0%;
+}
+
+.mv__bg {
+  -webkit-mask-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(50%, #000));
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 50% 100%);
+          mask-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(50%, #000));
+          mask-image: linear-gradient(to right, transparent 0, #000 50% 100%);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: 200% 100%;
+          mask-size: 200% 100%;
+  -webkit-mask-position: 100% 0%;
+          mask-position: 100% 0%;
+}
+
 .header {
   position: absolute;
   top: 43px;
@@ -231,16 +257,6 @@ main {
   inset: 0;
   z-index: 8;
   background: linear-gradient(45deg, #fff 0%, #ddcdce 100%);
-  -webkit-mask-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(50%, #000));
-  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 50% 100%);
-          mask-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(50%, #000));
-          mask-image: linear-gradient(to right, transparent 0, #000 50% 100%);
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  -webkit-mask-size: 200% 100%;
-          mask-size: 200% 100%;
-  -webkit-mask-position: 100% 0%;
-          mask-position: 100% 0%;
   pointer-events: none;
 }
 
@@ -395,16 +411,6 @@ main {
   background-repeat: repeat-x;
   font-family: "Cormorant Garamond", serif;
   background-clip: text;
-  -webkit-mask-image: -webkit-gradient(linear, left top, right top, color-stop(0, #000), to(transparent));
-  -webkit-mask-image: linear-gradient(to right, #000 0 50%, transparent 100%);
-          mask-image: -webkit-gradient(linear, left top, right top, color-stop(0, #000), to(transparent));
-          mask-image: linear-gradient(to right, #000 0 50%, transparent 100%);
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  -webkit-mask-size: 200% 100%;
-          mask-size: 200% 100%;
-  -webkit-mask-position: 0% 0%;
-          mask-position: 0% 0%;
 }
 
 .mv__vertical-copy {

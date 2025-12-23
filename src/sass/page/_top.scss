@@ -16,10 +16,6 @@ main {
   inset: 0;
   z-index: 8;
   background: linear-gradient(45deg, #fff 0%, #ddcdce 100%);
-  mask-image: linear-gradient(to right, transparent 0, #000 50% 100%);
-  mask-repeat: no-repeat;
-  mask-size: 200% 100%;
-  mask-position: 100% 0%;
   pointer-events: none;
 }
 .mv__logo {
@@ -152,11 +148,6 @@ main {
   background-repeat: repeat-x;
   font-family: var(--second-font-family);
   background-clip: text;
-
-  mask-image: linear-gradient(to right, #000 0 50%, transparent 100%);
-  mask-repeat: no-repeat;
-  mask-size: 200% 100%;
-  mask-position: 0% 0%;
 }
 
 .mv__vertical-copy {
