@@ -165,6 +165,41 @@ html {
   word-wrap: break-word;
 }
 
+main {
+  overflow: hidden;
+  opacity: 0;
+}
+main .mv__slogan-text {
+  color: transparent;
+  background: linear-gradient(45deg, #f4727b 0 10%, #cfc9c9, #f4727b 90% 100%);
+  background-size: 100% 100%;
+  background-repeat: repeat-x;
+  background-clip: text;
+  -webkit-mask-image: -webkit-gradient(linear, left top, right top, color-stop(0, #000), to(transparent));
+  -webkit-mask-image: linear-gradient(to right, #000 0 50%, transparent 100%);
+          mask-image: -webkit-gradient(linear, left top, right top, color-stop(0, #000), to(transparent));
+          mask-image: linear-gradient(to right, #000 0 50%, transparent 100%);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: 200% 100%;
+          mask-size: 200% 100%;
+  -webkit-mask-position: 0% 0%;
+          mask-position: 0% 0%;
+}
+
+.mv__bg {
+  -webkit-mask-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(50%, #000));
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 50% 100%);
+          mask-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(50%, #000));
+          mask-image: linear-gradient(to right, transparent 0, #000 50% 100%);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: 200% 100%;
+          mask-size: 200% 100%;
+  -webkit-mask-position: 100% 0%;
+          mask-position: 100% 0%;
+}
+
 .header {
   position: absolute;
   top: 43px;
