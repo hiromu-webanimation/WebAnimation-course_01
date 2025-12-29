@@ -24,7 +24,7 @@
   z-index: 11;
   width: 28%;
   left: 0;
-  bottom: 0;
+  bottom: rem(-50);
   translate: 0 45%;
 }
 
@@ -130,13 +130,8 @@
   line-height: 1.1;
   width: fit-content;
   margin-inline: auto;
-  // color: rgba(255, 208, 210, 0.72);
-  color: transparent;
-  background: linear-gradient(45deg, #f4727b 0 10%, #cfc9c9, #f4727b 90% 100%);
-  background-size: 100% 100%;
-  background-repeat: repeat-x;
   font-family: var(--second-font-family);
-  background-clip: text;
+  color: rgba(255, 208, 210, 0.72);
 }
 
 .mv__vertical-copy {

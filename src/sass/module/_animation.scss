@@ -1,10 +1,35 @@
 @use "global" as *;
 
-// 最初の画面の背景
-// .mv__bg {
-//   position: fixed;
-//   inset: 0;
-//   z-index: 8;
-//   background: linear-gradient(45deg, #fff 0%, #ddcdce 100%);
-//   pointer-events: none;
-// }
+main {
+  overflow: hidden;
+  opacity: 0;
+
+  // 最初のテキストが徐々に出てくる
+  .mv__slogan-text {
+    // 文字をくり抜く
+    color: transparent;
+    background: linear-gradient(
+      45deg,
+      #f4727b 0 10%,
+      #cfc9c9,
+      #f4727b 90% 100%
+    );
+    background-size: 100% 100%;
+    background-repeat: repeat-x;
+    background-clip: text;
+
+    // マスクで非表示
+    mask-image: linear-gradient(to right, #000 0 50%, transparent 100%);
+    mask-repeat: no-repeat;
+    mask-size: 200% 100%;
+    mask-position: 0% 0%;
+  }
+}
+
+// mv全体が徐々に出てくる
+.mv__bg {
+  mask-image: linear-gradient(to right, transparent 0, #000 50% 100%);
+  mask-repeat: no-repeat;
+  mask-size: 200% 100%;
+  mask-position: 100% 0%;
+}

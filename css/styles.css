@@ -242,7 +242,8 @@ html {
   z-index: 11;
   width: 28%;
   left: 0;
-  bottom: 0;
+  bottom: -50px;
+  bottom: -3.125rem;
   translate: 0 45%;
 }
 
@@ -366,12 +367,8 @@ html {
   width: -moz-fit-content;
   width: fit-content;
   margin-inline: auto;
-  color: transparent;
-  background: linear-gradient(45deg, #f4727b 0 10%, #cfc9c9, #f4727b 90% 100%);
-  background-size: 100% 100%;
-  background-repeat: repeat-x;
   font-family: "Cormorant Garamond", serif;
-  background-clip: text;
+  color: rgba(255, 208, 210, .72);
 }
 
 .mv__vertical-copy {
