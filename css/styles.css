@@ -165,7 +165,16 @@ html {
   word-wrap: break-word;
 }
 
-.mv__slogan-text {
+main {
+  overflow: hidden;
+  opacity: 0;
+}
+main .mv__slogan-text {
+  color: transparent;
+  background: linear-gradient(45deg, #f4727b 0 10%, #cfc9c9, #f4727b 90% 100%);
+  background-size: 100% 100%;
+  background-repeat: repeat-x;
+  background-clip: text;
   -webkit-mask-image: -webkit-gradient(linear, left top, right top, color-stop(0, #000), to(transparent));
   -webkit-mask-image: linear-gradient(to right, #000 0 50%, transparent 100%);
           mask-image: -webkit-gradient(linear, left top, right top, color-stop(0, #000), to(transparent));
@@ -239,11 +248,6 @@ html {
   margin-inline: auto;
 }
 
-main {
-  overflow: hidden;
-  opacity: 0;
-}
-
 .mv {
   position: relative;
   z-index: 2;
@@ -281,7 +285,8 @@ main {
   z-index: 11;
   width: 28%;
   left: 0;
-  bottom: 0;
+  bottom: -50px;
+  bottom: -3.125rem;
   translate: 0 45%;
 }
 
@@ -405,12 +410,8 @@ main {
   width: -moz-fit-content;
   width: fit-content;
   margin-inline: auto;
-  color: transparent;
-  background: linear-gradient(45deg, #f4727b 0 10%, #cfc9c9, #f4727b 90% 100%);
-  background-size: 100% 100%;
-  background-repeat: repeat-x;
   font-family: "Cormorant Garamond", serif;
-  background-clip: text;
+  color: rgba(255, 208, 210, .72);
 }
 
 .mv__vertical-copy {

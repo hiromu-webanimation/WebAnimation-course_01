@@ -7,7 +7,7 @@ const op = gsap.timeline();
 op.fromTo(
   ".mv__slogan-text",
   {
-    maskPosition: "-900px 0%",
+    maskPosition: "-100.25rem 0%",
   },
   {
     maskPosition: "0px 0%",
@@ -19,10 +19,10 @@ op.fromTo(
   .fromTo(
     ".mv__slogan-text",
     {
-      backgroundPosition: "-240px 0%",
+      backgroundPosition: "-15rem 0%",
     },
     {
-      backgroundPosition: "240px 0%",
+      backgroundPosition: "15rem 0%",
       duration: 5,
       stagger: 0.3,
       ease: "power2.inOut",
