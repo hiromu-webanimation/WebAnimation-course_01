@@ -1,5 +1,9 @@
 @use "global" as *;
 
+main {
+  overflow: hidden;
+}
+
 .mv {
   position: relative;
   z-index: 2;
@@ -131,7 +135,7 @@
   width: fit-content;
   margin-inline: auto;
   font-family: var(--second-font-family);
-  color: rgba(255, 208, 210, 0.72);
+  color: rgba(255, 208, 210, 1);
 }
 
 .mv__vertical-copy {

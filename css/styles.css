@@ -213,6 +213,10 @@ html {
   margin-inline: auto;
 }
 
+main {
+  overflow: hidden;
+}
+
 .mv {
   position: relative;
   z-index: 2;
@@ -368,7 +372,7 @@ html {
   width: fit-content;
   margin-inline: auto;
   font-family: "Cormorant Garamond", serif;
-  color: rgba(255, 208, 210, .72);
+  color: rgb(255, 208, 210);
 }
 
 .mv__vertical-copy {
