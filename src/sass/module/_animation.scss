@@ -2,9 +2,43 @@
 
 // 背景を用意
 .mv__bg {
-  // position: fixed;
-  // inset: 0;
-  // z-index: 8;
-  // background: linear-gradient(45deg, #fff 0%, #ddcdce 100%);
-  // pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 8;
+  background: linear-gradient(45deg, #fff 0%, #ddcdce 100%);
+  pointer-events: none;
+}
+
+//テキストが左から右にじんわり出てくる
+main {
+  .mv__slogan-text {
+    mask-image: linear-gradient(to right, black 0 50%, transparent);
+    mask-size: 200% 100%;
+    mask-repeat: no-repeat;
+    mask-position: 200% 0%;
+  }
+}
+
+// テキストの色が複雑に変わる
+main {
+  .mv__slogan-text {
+    color: transparent;
+    background: linear-gradient(
+      to right,
+      rgb(215, 88, 109),
+      gray,
+      rgb(230, 80, 105)
+    );
+    background-clip: text;
+    background-repeat: repeat-x;
+    background-position: 0% 0%;
+  }
+}
+
+// 背景色が徐々に左から右に消える
+.mv__bg {
+  mask-image: linear-gradient(to right, transparent, black 50% 100%);
+  mask-size: 200% 100%;
+  mask-position: 100% 0; //-100%まで移動させる
+  mask-repeat: no-repeat;
 }
